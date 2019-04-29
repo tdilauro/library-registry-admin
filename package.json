@@ -14,8 +14,8 @@
     "lint": "tslint -c tslint.json src/*.ts src/*.tsx src/**/*.ts src/**/*.tsx src/**/**/*.ts src/**/**/*.tsx && sass-lint -c .sass-lint.yml -v -q",
     "test": "npm run lint && tsc && cp -r src/stylesheets lib && mocha --require lib/testHelper.js lib/__tests__/*.js lib/**/__tests__/*.js lib/**/**/__tests__/*.js",
     "test-file": "npm run lint && tsc && cp -r src/stylesheets lib && mocha --require lib/testHelper.js",
-    "dev": "rm -rf dist && NODE_ENV=development webpack --watch --progress --display-modules --config webpack.prod.config",
-    "prod": "rm -rf dist && NODE_ENV=production webpack -p --progress --display-modules --config webpack.prod.config"
+    "dev": "webpack --watch --progress --display-modules --config webpack.dev.config",
+    "prod": "webpack -p --progress --display-modules --config webpack.prod.config"
   },
   "dependencies": {
     "@nypl/dgx-svg-icons": "^0.3.9",
@@ -36,6 +36,7 @@
     "@types/node": "^11.13.0",
     "@types/react": "16.4.7",
     "chai": "^3.5.0",
+    "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "enzyme": "^2.9.1",
     "fetch-mock": "^7.3.1",
