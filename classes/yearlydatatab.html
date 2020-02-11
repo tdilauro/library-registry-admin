@@ -127,9 +127,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="yearlydatatab.html#render" class="tsd-kind-icon">render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="yearlydatatab.html#setstate" class="tsd-kind-icon">set<wbr>State</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="yearlydatatab.html#shouldcomponentupdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="yearlydatatab.html#sortbymonth" class="tsd-kind-icon">sort<wbr>ByMonth</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="yearlydatatab.html#sortbyyear" class="tsd-kind-icon">sort<wbr>ByYear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="yearlydatatab.html#toggleexpanded" class="tsd-kind-icon">toggle<wbr>Expanded</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="yearlydatatab.html#toggleformatting" class="tsd-kind-icon">toggle<wbr>Formatting</a></li>
 							</ul>
 						</section>
 					</div>
@@ -148,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Component.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L19">src/components/YearlyDataTab.tsx:19</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L20">src/components/YearlyDataTab.tsx:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -198,7 +198,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLUListElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;React.createRef&lt;HTMLUListElement&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L19">src/components/YearlyDataTab.tsx:19</a></li>
+							<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L20">src/components/YearlyDataTab.tsx:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -562,7 +562,7 @@ class Foo extends React.Component {
 							<aside class="tsd-sources">
 								<p>Overrides DeprecatedLifecycle.componentWillReceiveProps</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L25">src/components/YearlyDataTab.tsx:25</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L25">src/components/YearlyDataTab.tsx:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -727,7 +727,7 @@ class Foo extends React.Component {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L53">src/components/YearlyDataTab.tsx:53</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L58">src/components/YearlyDataTab.tsx:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -756,7 +756,7 @@ class Foo extends React.Component {
 							<aside class="tsd-sources">
 								<p>Overrides Component.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L69">src/components/YearlyDataTab.tsx:69</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L73">src/components/YearlyDataTab.tsx:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -849,6 +849,29 @@ class Foo extends React.Component {
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sortbymonth" class="tsd-anchor"></a>
+					<h3>sort<wbr>ByMonth</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sort<wbr>ByMonth<span class="tsd-signature-symbol">(</span>category<span class="tsd-signature-symbol">: </span><a href="../interfaces/librarydata.html" class="tsd-signature-type">LibraryData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/librarydata.html" class="tsd-signature-type">LibraryData</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L52">src/components/YearlyDataTab.tsx:52</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>category: <a href="../interfaces/librarydata.html" class="tsd-signature-type">LibraryData</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/librarydata.html" class="tsd-signature-type">LibraryData</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="sortbyyear" class="tsd-anchor"></a>
 					<h3>sort<wbr>ByYear</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -858,7 +881,7 @@ class Foo extends React.Component {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L32">src/components/YearlyDataTab.tsx:32</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L32">src/components/YearlyDataTab.tsx:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -883,7 +906,7 @@ class Foo extends React.Component {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L56">src/components/YearlyDataTab.tsx:56</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/85cdb84/src/components/YearlyDataTab.tsx#L61">src/components/YearlyDataTab.tsx:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -892,23 +915,6 @@ class Foo extends React.Component {
 									<h5>e: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toggleformatting" class="tsd-anchor"></a>
-					<h3>toggle<wbr>Formatting</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Formatting<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/9f05907/src/components/YearlyDataTab.tsx#L50">src/components/YearlyDataTab.tsx:50</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1000,13 +1006,13 @@ class Foo extends React.Component {
 								<a href="yearlydatatab.html#shouldcomponentupdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="yearlydatatab.html#sortbymonth" class="tsd-kind-icon">sort<wbr>ByMonth</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="yearlydatatab.html#sortbyyear" class="tsd-kind-icon">sort<wbr>ByYear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="yearlydatatab.html#toggleexpanded" class="tsd-kind-icon">toggle<wbr>Expanded</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="yearlydatatab.html#toggleformatting" class="tsd-kind-icon">toggle<wbr>Formatting</a>
 							</li>
 						</ul>
 					</li>
