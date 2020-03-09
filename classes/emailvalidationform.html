@@ -120,12 +120,15 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#componentwillunmount" class="tsd-kind-icon">component<wbr>Will<wbr>Unmount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#componentwillupdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="emailvalidationform.html#convertemailtitle" class="tsd-kind-icon">convert<wbr>Email<wbr>Title</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#forceupdate" class="tsd-kind-icon">force<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#getsnapshotbeforeupdate" class="tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="emailvalidationform.html#render" class="tsd-kind-icon">render</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="emailvalidationform.html#sendemail" class="tsd-kind-icon">send<wbr>Email</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="emailvalidationform.html#renderinfotext" class="tsd-kind-icon">render<wbr>Info<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="emailvalidationform.html#rendertitle" class="tsd-kind-icon">render<wbr>Title</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="emailvalidationform.html#setstate" class="tsd-kind-icon">set<wbr>State</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="emailvalidationform.html#shouldcomponentupdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="emailvalidationform.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -144,7 +147,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Component.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/708249b/src/components/EmailValidationForm.tsx#L31">src/components/EmailValidationForm.tsx:31</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L31">src/components/EmailValidationForm.tsx:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -658,6 +661,29 @@ class Foo extends React.Component {
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="convertemailtitle" class="tsd-anchor"></a>
+					<h3>convert<wbr>Email<wbr>Title</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Email<wbr>Title<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L39">src/components/EmailValidationForm.tsx:39</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="forceupdate" class="tsd-anchor"></a>
 					<h3>force<wbr>Update</h3>
@@ -744,7 +770,7 @@ class Foo extends React.Component {
 							<aside class="tsd-sources">
 								<p>Overrides Component.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/708249b/src/components/EmailValidationForm.tsx#L45">src/components/EmailValidationForm.tsx:45</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L65">src/components/EmailValidationForm.tsx:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -752,25 +778,63 @@ class Foo extends React.Component {
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="sendemail" class="tsd-anchor"></a>
-					<h3>send<wbr>Email</h3>
+					<a name="renderinfotext" class="tsd-anchor"></a>
+					<h3>render<wbr>Info<wbr>Text</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Email<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Info<wbr>Text<span class="tsd-signature-symbol">(</span>emailString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, emailAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, validated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, alreadyValidated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/708249b/src/components/EmailValidationForm.tsx#L39">src/components/EmailValidationForm.tsx:39</a></li>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L55">src/components/EmailValidationForm.tsx:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>data: <span class="tsd-signature-type">FormData</span></h5>
+									<h5>emailString: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>emailAddress: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>validated: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>alreadyValidated: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rendertitle" class="tsd-anchor"></a>
+					<h3>render<wbr>Title</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Title<span class="tsd-signature-symbol">(</span>emailString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, emailAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, alreadyValidated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L43">src/components/EmailValidationForm.tsx:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>emailString: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>emailAddress: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>alreadyValidated: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -859,6 +923,32 @@ class Foo extends React.Component {
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="validate" class="tsd-anchor"></a>
+					<h3>validate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NYPL-Simplified/registry_admin/blob/a5f447c/src/components/EmailValidationForm.tsx#L49">src/components/EmailValidationForm.tsx:49</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">FormData</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -924,6 +1014,9 @@ class Foo extends React.Component {
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="emailvalidationform.html#componentwillupdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="emailvalidationform.html#convertemailtitle" class="tsd-kind-icon">convert<wbr>Email<wbr>Title</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="emailvalidationform.html#forceupdate" class="tsd-kind-icon">force<wbr>Update</a>
 							</li>
@@ -934,13 +1027,19 @@ class Foo extends React.Component {
 								<a href="emailvalidationform.html#render" class="tsd-kind-icon">render</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="emailvalidationform.html#sendemail" class="tsd-kind-icon">send<wbr>Email</a>
+								<a href="emailvalidationform.html#renderinfotext" class="tsd-kind-icon">render<wbr>Info<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="emailvalidationform.html#rendertitle" class="tsd-kind-icon">render<wbr>Title</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="emailvalidationform.html#setstate" class="tsd-kind-icon">set<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="emailvalidationform.html#shouldcomponentupdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="emailvalidationform.html#validate" class="tsd-kind-icon">validate</a>
 							</li>
 						</ul>
 					</li>
