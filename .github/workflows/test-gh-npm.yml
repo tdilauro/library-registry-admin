@@ -54,5 +54,5 @@ jobs:
 #      - run: echo "registry=https://npm.pkg.github.com/@${{ github.repository_owner }}" >> .npmrc
       - run: npm publish $(ls *.tgz)
 # Don't set an auth token for a public package repo
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
