@@ -22,9 +22,6 @@
     "prod": "webpack -p --progress --display-modules --config webpack.prod.config",
     "build-docs": "node_modules/.bin/typedoc --tsconfig tsconfig.json"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "@nypl/dgx-svg-icons": "^0.3.13",
     "bootstrap": "^3.3.6",
