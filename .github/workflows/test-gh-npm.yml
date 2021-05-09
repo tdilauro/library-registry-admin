@@ -50,7 +50,7 @@ jobs:
           node-version: ${{ env.NODE_BUILD_VERSION }}
           registry-url: https://npm.pkg.github.com/
           scope: "@${{ github.repository_owner }}"
-      - run: echo "@i${{ github.repository_owner }}:registry=https://npm.pkg.github.com" >> .npmrc
+      - run: echo "@${{ github.repository_owner }}:registry=https://npm.pkg.github.com" >> .npmrc
 #      - run: echo "registry=https://npm.pkg.github.com/@${{ github.repository_owner }}" >> .npmrc
       - run: npm publish $(ls *.tgz)
         env:
