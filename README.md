@@ -1,9 +1,10 @@
-# registry-admin
-Web front-end for the Library Registry administrative interface.
+# Library Registry Administrative Interface
 
-<!-- [![npm version](https://badge.fury.io/js/simplified-circulation-web.svg)](https://badge.fury.io/js/simplified-circulation-web)
+[![Test](https://github.com/ThePalaceProject/library-registry-admin/actions/workflows/test.yml/badge.svg)](https://github.com/ThePalaceProject/library-registry-admin/actions/workflows/test.yml)
+[![npm version](https://badge.fury.io/js/%40thepalaceproject%2Flibrary-registry-admin.svg)](https://badge.fury.io/js/%40thepalaceproject%2Flibrary-registry-admin)
+[![Deploy Documentation](https://github.com/ThePalaceProject/library-registry-admin/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/ThePalaceProject/library-registry-admin/actions/workflows/gh-pages.yml)
 
-[![Build Status](https://travis-ci.org/NYPL-Simplified/circulation-web.svg?branch=master)](https://travis-ci.org/NYPL-Simplified/circulation-web) -->
+This is a [LYRASIS](http://lyrasis.org)-maintained fork of the NYPL [Library Simplified](http://www.librarysimplified.org/) Library Registry administrative interface.
 
 ## Library Simplified Documentation
 
@@ -11,36 +12,36 @@ To see screenshots, read in-depth documentation, and find out more about the pro
 
 ## Setup
 
-This package is meant to be used with the Library Simplified [Library Registry](https://github.com/NYPL-Simplified/library_registry).
+This package is meant to be used with The Palace Project [Library Registry](https://github.com/thepalaceproject/library-registry).
 
 #### Use npm version
 
 Suggested local folder setup:
-- `/[path to project folder]/library_registry`
+- `/[path to project folder]/library-registry`
 
-To use the published version with your circulation manager, run `npm install` from the `library_registry` local installed repository.
+To use the published version with your circulation manager, run `npm install` from the `library-registry` locally installed repository.
 
 #### Use local development version
 
 Suggested local folder setup:
-- `/[path to project folder]/library_registry`
-- `/[path to project folder]/registry_admin`
+- `/[path to project folder]/library-registry`
+- `/[path to project folder]/library-registry-admin`
 
-If you're working on the administrative interface and want to test local changes, you can link your local clone of this repository to your local circulation manager. These steps will allow you to work on the front-end administrative interface and see updates while developing.
+If you're working on the administrative interface and want to test local changes, you can link your local clone of this repository to your local library registry. These steps will allow you to work on the front-end administrative interface and see updates while developing.
 
-1. Run `npm link` in this `registry_admin` repository,
-2. run `npm link simplified-registry-admin` from the `library_registry` repository,
-2. run the library registry using `python app.py` at the root in the `library_registry` repository,
-3. run the web interface using `npm run dev` at the root of this `registry_admin` repository,
+1. Run `npm link` in this `library-registry-admin` repository,
+2. run `npm link library-registry-admin` from the `library-registry` repository,
+2. run the library registry using `python app.py` at the root in the `library-registry` repository,
+3. run the web interface using `npm run dev` at the root of this `library-registry-admin` repository,
 4. visit `localhost:7000/admin/`
 
-Webpack will take care of compiling and updating any new changes made locally for development. Just refresh the page to see updates without having to restart either the `library_registry` or `registry_admin` servers.
+Webpack will take care of compiling and updating any new changes made locally for development. Just refresh the page to see updates without having to restart either the `library-registry` or `library-registry-admin` servers.
 
 ## Publishing
 
-<!-- This package is [published to npm](https://www.npmjs.com/package/simplified-circulation-web). -->
+<!-- This package is [published to npm](https://www.npmjs.com/package/@thepalaceproject/library-registry-admin). -->
 
-To publish a new version, you need to create an npm account and be a collaborator on the package. Then you can run `npm publish` from your local copy of the repository.
+We use GitHub Actions for publishing. This package is published automatically when a new release is created.
 
 ## Accessibility
 
@@ -54,7 +55,7 @@ Like the codebase, all the unit tests are written in Typescript. Tests are writt
 
 To run the tests, perform `npm test`.
 
-We use Travis CI for continuous integration. Any pull requests submitted must have tests and those tests must pass on Travis CI.
+We use GitHub Actions for continuous integration. Any pull requests submitted must have tests and those tests must pass during the CI checks.
 
 ## License
 
