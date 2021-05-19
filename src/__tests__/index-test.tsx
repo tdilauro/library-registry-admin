@@ -5,16 +5,16 @@ import * as ReactDOM from "react-dom";
 import * as Enzyme from "enzyme";
 import * as Sinon from "sinon";
 
-const RegistryAdmin = require("../index");
+const LibraryRegistryAdmin = require("../index");
 import { BrowserRouter } from "react-router-dom";
 import App from "../components/App";
 
-describe("RegistryAdmin", () => {
+describe("LibraryRegistryAdmin", () => {
   let renderSpy;
 
   beforeEach(() => {
     renderSpy = Sinon.spy(ReactDOM, "render");
-    new RegistryAdmin({ username: "", imgSrc: "" });
+    new LibraryRegistryAdmin({ username: "", imgSrc: "" });
   });
 
   afterEach(() => {

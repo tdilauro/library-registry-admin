@@ -11,7 +11,7 @@ interface ConfigurationSettings {
 
 /** The main admin interface application. Create an instance of this class
     to render the app and set up routing. */
-class RegistryAdmin {
+class LibraryRegistryAdmin {
   constructor(config: ConfigurationSettings) {
     let div = document.createElement("div");
     div.id = "landing-page";
@@ -36,4 +36,4 @@ class RegistryAdmin {
   }
 }
 
-export = RegistryAdmin;
+export = LibraryRegistryAdmin;
