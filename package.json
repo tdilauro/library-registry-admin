@@ -1,14 +1,17 @@
 {
-  "name": "simplified-registry-admin",
-  "version": "1.4.12",
-  "description": "Web Front-end for Library Simplified Circulation Manager Admin Interface",
+  "name": "@thepalaceproject/library-registry-admin",
+  "description": "Admin Interface for The Palace Project Library Registry",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NYPL-Simplified/registry_admin.git"
+    "url": "git://github.com/ThePalaceProject/library-registry-admin.git"
   },
   "main": "dist/registry-admin.js",
-  "author": "NYPL",
+  "author": "The Palace Project",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=7.0.0"
+  },
   "scripts": {
     "prepublishOnly": "npm run prod",
     "lint": "tslint -c tslint.json src/*.ts src/*.tsx src/**/*.ts src/**/*.tsx src/**/**/*.ts src/**/**/*.tsx src/**/**/**/*.ts src/**/**/**/*.tsx && sass-lint -c .sass-lint.yml -v -q",
