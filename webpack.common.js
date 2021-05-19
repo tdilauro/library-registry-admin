@@ -12,14 +12,14 @@ var config = {
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "registry-admin.js",
-    library: "RegistryAdmin",
+    filename: "library-registry-admin.js",
+    library: "LibraryRegistryAdmin",
     libraryTarget: "umd"
   },
   plugins: [
     new CleanWebpackPlugin(),
     // Extract separate css file.
-    new MiniCssExtractPlugin({ filename: "registry-admin.css" }),
+    new MiniCssExtractPlugin({ filename: "library-registry-admin.css" }),
     // Set a local global variable in the app that will be used only
     // for testing AXE in development mode.
     new webpack.DefinePlugin({

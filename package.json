@@ -3,9 +3,9 @@
   "description": "Admin Interface for The Palace Project Library Registry",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ThePalaceProject/library-registry-admin.git"
+    "url": "https://github.com/thepalaceproject/library-registry-admin.git"
   },
-  "main": "dist/registry-admin.js",
+  "main": "dist/library-registry-admin.js",
   "author": "The Palace Project",
   "license": "Apache-2.0",
   "engines": {
