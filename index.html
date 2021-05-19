@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@5lions/library-registry-admin</title>
+	<title>@thepalaceproject/library-registry-admin</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@5lions/library-registry-admin</a>
+					<a href="index.html" class="title">@thepalaceproject/library-registry-admin</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @5lions/library-registry-admin</h1>
+			<h1> @thepalaceproject/library-registry-admin</h1>
 		</div>
 	</div>
 </header>
@@ -64,11 +64,13 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#library-registry-administrative-interface" id="library-registry-administrative-interface" style="color: inherit; text-decoration: none;">
-					<h1>Library Registry Administrative Interface</h1>
+				<a href="#registry-admin" id="registry-admin" style="color: inherit; text-decoration: none;">
+					<h1>registry-admin</h1>
 				</a>
-				<p><a href="https://github.com/tdilauro/library-registry-admin/actions/workflows/test.yml"><img src="https://github.com/tdilauro/library-registry-admin/actions/workflows/test.yml/badge.svg" alt="Test"></a></p>
-				<p>This is a <a href="http://lyrasis.org">LYRASIS</a>-maintained fork of the NYPL <a href="http://www.librarysimplified.org/">Library Simplified</a> Library Registry administrative interface.</p>
+				<p>Web front-end for the Library Registry administrative interface.</p>
+				<!-- [![npm version](https://badge.fury.io/js/simplified-circulation-web.svg)](https://badge.fury.io/js/simplified-circulation-web)
+
+[![Build Status](https://travis-ci.org/NYPL-Simplified/circulation-web.svg?branch=master)](https://travis-ci.org/NYPL-Simplified/circulation-web) -->
 				<a href="#library-simplified-documentation" id="library-simplified-documentation" style="color: inherit; text-decoration: none;">
 					<h2>Library Simplified Documentation</h2>
 				</a>
@@ -76,37 +78,37 @@
 				<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
 					<h2>Setup</h2>
 				</a>
-				<p>This package is meant to be used with The Palace Project <a href="https://github.com/thepalaceproject/library-registry">Library Registry</a>.</p>
+				<p>This package is meant to be used with the Library Simplified <a href="https://github.com/NYPL-Simplified/library_registry">Library Registry</a>.</p>
 				<a href="#use-npm-version" id="use-npm-version" style="color: inherit; text-decoration: none;">
 					<h4>Use npm version</h4>
 				</a>
 				<p>Suggested local folder setup:</p>
 				<ul>
-					<li><code>/[path to project folder]/library-registry</code></li>
+					<li><code>/[path to project folder]/library_registry</code></li>
 				</ul>
-				<p>To use the published version with your circulation manager, run <code>npm install</code> from the <code>library-registry</code> locally installed repository.</p>
+				<p>To use the published version with your circulation manager, run <code>npm install</code> from the <code>library_registry</code> local installed repository.</p>
 				<a href="#use-local-development-version" id="use-local-development-version" style="color: inherit; text-decoration: none;">
 					<h4>Use local development version</h4>
 				</a>
 				<p>Suggested local folder setup:</p>
 				<ul>
-					<li><code>/[path to project folder]/library-registry</code></li>
-					<li><code>/[path to project folder]/library-registry-admin</code></li>
+					<li><code>/[path to project folder]/library_registry</code></li>
+					<li><code>/[path to project folder]/registry_admin</code></li>
 				</ul>
-				<p>If you&#39;re working on the administrative interface and want to test local changes, you can link your local clone of this repository to your local library registry. These steps will allow you to work on the front-end administrative interface and see updates while developing.</p>
+				<p>If you&#39;re working on the administrative interface and want to test local changes, you can link your local clone of this repository to your local circulation manager. These steps will allow you to work on the front-end administrative interface and see updates while developing.</p>
 				<ol>
-					<li>Run <code>npm link</code> in this <code>library-registry-admin</code> repository,</li>
-					<li>run <code>npm link library-registry-admin</code> from the <code>library-registry</code> repository,</li>
-					<li>run the library registry using <code>python app.py</code> at the root in the <code>library-registry</code> repository,</li>
-					<li>run the web interface using <code>npm run dev</code> at the root of this <code>library-registry-admin</code> repository,</li>
+					<li>Run <code>npm link</code> in this <code>registry_admin</code> repository,</li>
+					<li>run <code>npm link simplified-registry-admin</code> from the <code>library_registry</code> repository,</li>
+					<li>run the library registry using <code>python app.py</code> at the root in the <code>library_registry</code> repository,</li>
+					<li>run the web interface using <code>npm run dev</code> at the root of this <code>registry_admin</code> repository,</li>
 					<li>visit <code>localhost:7000/admin/</code></li>
 				</ol>
 				<p>Webpack will take care of compiling and updating any new changes made locally for development. Just refresh the page to see updates without having to restart either the <code>library_registry</code> or <code>registry_admin</code> servers.</p>
 				<a href="#publishing" id="publishing" style="color: inherit; text-decoration: none;">
 					<h2>Publishing</h2>
 				</a>
-				<!-- This package is [published to npm](https://www.npmjs.com/package/@thepalaceproject/library-registry-admin). -->
-				<p>We use GitHub Actions for publishing. This package is published automatically when a new release is created.</p>
+				<!-- This package is [published to npm](https://www.npmjs.com/package/simplified-circulation-web). -->
+				<p>To publish a new version, you need to create an npm account and be a collaborator on the package. Then you can run <code>npm publish</code> from your local copy of the repository.</p>
 				<a href="#accessibility" id="accessibility" style="color: inherit; text-decoration: none;">
 					<h2>Accessibility</h2>
 				</a>
@@ -117,7 +119,7 @@
 				</a>
 				<p>Like the codebase, all the unit tests are written in Typescript. Tests are written for all React components as well as redux and utility functions, and all can be found in their respective <code>__tests__</code> folders.</p>
 				<p>To run the tests, perform <code>npm test</code>.</p>
-				<p>We use GitHub Actions for continuous integration. Any pull requests submitted must have tests and those tests must pass during the CI checks.</p>
+				<p>We use Travis CI for continuous integration. Any pull requests submitted must have tests and those tests must pass on Travis CI.</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
