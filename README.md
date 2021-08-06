@@ -14,14 +14,7 @@ To see screenshots, read in-depth documentation, and find out more about the pro
 
 This package is meant to be used with The Palace Project [Library Registry](https://github.com/thepalaceproject/library-registry).
 
-#### Use npm version
-
-Suggested local folder setup:
-- `/[path to project folder]/library-registry`
-
-To use the published version with your circulation manager, run `npm install` from the `library-registry` locally installed repository.
-
-#### Use local development version
+### Cloning this repository
 
 Suggested local folder setup:
 - `/[path to project folder]/library-registry`
