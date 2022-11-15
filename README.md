@@ -14,13 +14,31 @@ To see screenshots, read in-depth documentation, and find out more about the pro
 
 This package is meant to be used with The Palace Project [Library Registry](https://github.com/thepalaceproject/library-registry).
 
+Node.js version 12 (or greater) is required.
+
 ### Cloning this repository
 
 Suggested local folder setup:
 - `/[path to project folder]/library-registry`
 - `/[path to project folder]/library-registry-admin`
 
-If you're working on the administrative interface and want to test local changes, you can link your local clone of this repository to your local library registry. These steps will allow you to work on the front-end administrative interface and see updates while developing.
+### Running with a remote registry server
+
+If you're working on the administrative interface and want to test local changes against a remote library registry, you can run the administrative interface using the command:
+
+```
+npm run dev-server -- --env=backend=[url]
+```
+
+For example, `npm run dev-server -- --env=backend=https://registry-tpp-qa.palaceproject.io`. The admin UI can then be accessed at `http://localhost:8080/admin/`.
+
+This works by running a local proxy server. HTML pages received from the Library Registry that load assets from the `library-registry-admin` package on jsdelivr are rewritten to load them from the local webpack build instead.
+
+Webpack will take care of compiling and updating any new changes made locally for development. Hot module replacement and live reloading are enabled, so the browser will automatically update as changes are made.
+
+### Running with a local registry server
+
+If you're working on the administrative interface and want to test local changes against a local library registry, you can link your local clone of this repository to your local library registry. These steps will allow you to work on the front-end administrative interface and see updates while developing.
 
 1. Run `npm link` in this `library-registry-admin` repository,
 2. run `npm link library-registry-admin` from the `library-registry` repository,
