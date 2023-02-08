@@ -2,7 +2,7 @@ import * as React from "react";
 import { Form, Input } from "library-simplified-reusable-components";
 import { connect } from "react-redux";
 import ActionCreator from "../actions";
-import { FetchErrorData } from "opds-web-client/lib/interfaces";
+import { FetchErrorData } from "@thepalaceproject/web-opds-client/lib/interfaces";
 import { Store } from "redux";
 import { State } from "../reducers/index";
 import { LibraryData } from "../interfaces";

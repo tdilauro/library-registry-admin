@@ -5,7 +5,7 @@ import { Form, Input } from "library-simplified-reusable-components";
 import Fieldset from "./Fieldset";
 import ActionCreator from "../../actions";
 import { State } from "../../reducers/index";
-import { FetchErrorData } from "opds-web-client/lib/interfaces";
+import { FetchErrorData } from "@thepalaceproject/web-opds-client/lib/interfaces";
 
 export interface LogInFormStateProps {
   error?: FetchErrorData;

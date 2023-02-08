@@ -28,8 +28,10 @@ var config = {
   ],
   optimization: {
     minimizer: [new TerserPlugin({
-      terserOptions: { compress: false },
-      sourceMap: true
+      terserOptions: {
+        compress: false,
+        sourceMap: true
+      }
     })]
   },
   module: {
@@ -45,16 +47,22 @@ var config = {
       {
         test: /\.tsx?$/,
         exclude: [/node_modules/],
-        loaders: ['ts-loader']
+        use: ["ts-loader"]
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg).*$/,
-        loader: 'url-loader?limit=100000'
+        use: ["url-loader?limit=100000"]
       }
     ],
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".scss"],
+    fallback: {
+      buffer: require.resolve("buffer"),
+      stream: require.resolve("stream-browserify"),
+      timers: require.resolve("timers-browserify"),
+      url: require.resolve("url")
+    }
   }
 };
 

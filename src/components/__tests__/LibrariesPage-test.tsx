@@ -134,7 +134,8 @@ describe("LibrariesPage", () => {
     expect(wrapper.state()["showAll"]).to.be.false;
   });
 
-  it("should set searchCompleted state correctly before and after search", async () => {
+  it("should set searchCompleted state correctly before and after search", async function () {
+    this.timeout(5000);
     expect(wrapper.state()["searchCompleted"]).to.be.false;
     wrapper
       .find(".panel-info")
@@ -142,20 +143,30 @@ describe("LibrariesPage", () => {
       .simulate("change", { target: { value: "test_search_term" } });
     wrapper.find(".panel-info form .btn").simulate("click");
     expect(wrapper.state()["searchCompleted"]).to.be.false;
-    setTimeout(
-      () => expect(wrapper.state()["searchCompleted"]).to.be.true,
-      2000
-    );
+    await new Promise<void>((resolve) => {
+      setTimeout(
+        () => {
+          expect(wrapper.state()["searchCompleted"]).to.be.true;
+          resolve();
+        },
+        2000
+      );
+    });
     wrapper
       .find(".panel-info")
       .find("input")
       .simulate("change", { target: { value: "test_search_term" } });
     wrapper.find(".panel-info form .btn").simulate("click");
     expect(wrapper.state()["searchCompleted"]).to.be.false;
-    setTimeout(
-      () => expect(wrapper.state()["searchCompleted"]).to.be.true,
-      2000
-    );
+    await new Promise<void>((resolve) => {
+      setTimeout(
+        () => {
+          expect(wrapper.state()["searchCompleted"]).to.be.true;
+          resolve();
+        },
+        2000
+      );
+    });
   });
 
   it("shouldn't display QA search results unless in QA mode", async () => {

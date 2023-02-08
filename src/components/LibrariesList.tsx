@@ -3,7 +3,7 @@ import { Store } from "redux";
 import { State } from "../reducers/index";
 import { LibraryData } from "../interfaces";
 import LibrariesListItem from "./LibrariesListItem";
-import LoadingIndicator from "opds-web-client/lib/components/LoadingIndicator";
+import LoadingIndicator from "@thepalaceproject/web-opds-client/lib/components/LoadingIndicator";
 
 export interface LibrariesListOwnProps {
   libraries?: LibraryData[];

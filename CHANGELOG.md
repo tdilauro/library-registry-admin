@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.0.0
+
+- Upgrade dependencies to support Node 18.
+
 ### v0.0.2
 - Sync up to v1.4.15 of https://github.com/NYPL-Simplified/registry_admin.
   - Changed all instances of the Panel component to render contents only on click.

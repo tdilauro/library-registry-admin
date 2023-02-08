@@ -14,7 +14,7 @@ To see screenshots, read in-depth documentation, and find out more about the pro
 
 This package is meant to be used with The Palace Project [Library Registry](https://github.com/thepalaceproject/library-registry).
 
-Node.js version 12-14 is required to build and run the administrative interface.
+Node.js version 18 is required to build and run the administrative interface.
 
 ### Cloning this repository
 

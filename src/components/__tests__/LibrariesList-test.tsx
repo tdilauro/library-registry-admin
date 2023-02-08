@@ -5,7 +5,7 @@ import buildStore from "../../store";
 import { testLibrary1, testLibrary2, modifyLibrary } from "./TestUtils";
 
 import LibrariesList from "../LibrariesList";
-import LoadingIndicator from "opds-web-client/lib/components/LoadingIndicator";
+import LoadingIndicator from "@thepalaceproject/web-opds-client/lib/components/LoadingIndicator";
 
 describe("LibrariesList", () => {
   const libraries = [testLibrary1, testLibrary2];

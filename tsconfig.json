@@ -15,7 +15,7 @@
     "node_modules"
   ],
   "typedocOptions": {
-    "mode": "file",
+    "entryPointStrategy": "expand",
     "out": "docs"
   }
 }

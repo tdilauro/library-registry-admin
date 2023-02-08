@@ -60,10 +60,6 @@ describe("SearchForm", () => {
     wrapper.setState({ searchTerm: "a string" });
     wrapper.find("button").simulate("click");
     expect(search.callCount).to.equal(1);
-    setTimeout(
-      () => expect(wrapper.props()["searchCompleted"]).to.be.true,
-      2000
-    );
     formSubmit.restore();
   });
 

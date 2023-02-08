@@ -18,7 +18,7 @@ const {
   responseInterceptor,
 } = require("http-proxy-middleware");
 
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const { URL } = require("url");
 const dev = require("./webpack.dev.config.js");
 
@@ -117,7 +117,7 @@ module.exports = (env) => {
 
         const contentType = res.getHeader("content-type");
 
-        if (contentType.startsWith("text/html")) {
+        if (contentType && contentType.startsWith("text/html")) {
           return rewriteHTML(responseBuffer, req);
         }
 
