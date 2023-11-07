@@ -65,6 +65,40 @@ module.exports = (env) => {
     if (!location) {
       return;
     }
+    // Use the referer as the base URL, if location is relative.
+    const referer = req.headers.referer;
+    const locationUrl = new URL(location, referer);
+
+    if (locationUrl.host !== backendUrl.host) {
+      return;
+    }
+
+    const requestHost = req.headers.host;
+
+    if (!requestHost) {
+      return;
+    }
+
+    locationUrl.protocol = "http";
+    locationUrl.host = requestHost;
+
+    res.setHeader("location", locationUrl.href);
+  };
+
+  /**
+   * Rewrite a location header (as received in a 3xx response). This changes back-end URLs to
+   * point to the local server instead. The CM may redirect to a URL that contains a "redirect"
+   * parameter that contains another URL. The "redirect" parameter is also rewritten.
+   *
+   * @param res The response.
+   * @param req The request.
+   */
+  const rewriteCMLocationHeader = (res, req) => {
+    const location = res.getHeader("location");
+
+    if (!location) {
+      return;
+    }
 
     const locationUrl = new URL(location);
 
@@ -80,6 +114,19 @@ module.exports = (env) => {
 
     locationUrl.protocol = "http";
     locationUrl.host = requestHost;
+
+    const redirectParam = locationUrl.searchParams.get("redirect");
+
+    if (redirectParam) {
+      const redirectUrl = new URL(redirectParam);
+
+      if (redirectUrl.host == backendUrl.host) {
+        redirectUrl.protocol = "http";
+        redirectUrl.host = requestHost;
+
+        locationUrl.searchParams.set("redirect", redirectUrl.href);
+      }
+    }
 
     res.setHeader("location", locationUrl.href);
   };
